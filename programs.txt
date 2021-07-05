@@ -1,0 +1,101 @@
+1. random number generator
+2. Binary Search Program
+3. Rock, paper, and scissors
+4. Fibonacci series(recursion + non-recursion)
+5. Factorial of a number(recursion + non-recursion)
+6. Random password generator
+7. Implement switch case
+8. GUI age calculator
+9. Shutdown/Restart pc
+10. Perform ATM/Bank transitions
+11. Calculate your weight on Moon
+12. 15 to 20 lines program based on lambda function
+13. 15 to 20 lines program based on list comphrension
+14. 15 to 20 lines program based on string slicing
+15. working with numpy arrays, link==> https://www.w3schools.com/python/numpy/numpy_creating_arrays.asp
+16. Explain with programs- how to use built-in methods on string
+17. Explain with programs- how to use built-in methods on list
+18. for loop inside list, one liners in python
+19. Program to explain scope in python
+20. Short programs to give overview of exception handling and modules like-- math, datetime, json, etc
+
+1. Write a Python program to display the current date and time.
+
+Code:-
+
+import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+
+2. Write a Python program to print the calendar of a given month and year.
+
+Code:-
+
+import calendar
+y = int(input("Input the year : "))
+m = int(input("Input the month : "))
+print(calendar.month(y, m))
+
+3. Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers.
+
+Code:-
+
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+tuple = tuple(list)
+print('List : ',list)
+print('Tuple : ',tuple)
+
+4. Write a Python program to get a new string from a given string where "Is" has been added to the front. If the given string already begins with "Is" then return the string unchanged.
+
+Code:-
+
+def new_string(str):
+  if len(str) >= 2 and str[:2] == "Is":
+    return str
+  return "Is" + str
+
+print(new_string("Array"))
+print(new_string("IsEmpty"))
+
+5. Write a Python program to get a string which is n (non-negative integer) copies of a given string.
+
+code:-
+
+def larger_string(str, n):
+   result = ""
+   for i in range(n):
+      result = result + str
+   return result
+
+print(larger_string('abc', 2))
+print(larger_string('.py', 3))
+
+6. Write a Python program to check whether a specified value is contained in a group of values.
+
+Code:-
+
+def is_group_member(group_data, n):
+   for value in group_data:
+       if n == value:
+           return True
+   return False
+print(is_group_member([1, 5, 8, 3], 3))
+print(is_group_member([5, 8, 3], -1))
+
+7. Write a Python program to create a histogram from a given list of integers.
+
+Code:-
+
+def histogram( items ):
+    for n in items:
+        output = ''
+        times = n
+        while( times > 0 ):
+          output += '*'
+          times = times - 1
+        print(output)
+
+histogram([2, 3, 6, 5])
