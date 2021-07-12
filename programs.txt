@@ -5,9 +5,7 @@
 5. Factorial of a number(recursion + non-recursion)
 6. Random password generator
 7. Implement switch case
-8. GUI age calculator
 9. Shutdown/Restart pc
-10. Perform ATM/Bank transitions
 11. Calculate your weight on Moon
 12. 15 to 20 lines program based on lambda function
 13. 15 to 20 lines program based on list comphrension
