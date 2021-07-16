@@ -97,3 +97,16 @@ def histogram( items ):
         print(output)
 
 histogram([2, 3, 6, 5])
+
+
+___________________________
+
+FLASK
+
+PANDAS
+
+STREAMLIT
+
+HEROKU
+
+___________________________
